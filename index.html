@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <title>Erick Aronés</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><i class="bx bx-cube-alt"></i>Welcome</a>
+      <ul class="nav__list">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+      <div class="nav__icons">
+        <a href="#" id="open__button"><i class="bx bx-mail-send"></i><u class="nav__icons__message">Send Me a Message</u></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <div id="overlay">
+      <form action="https://formspree.io/f/mzblzzdb" method="POST">
+        <div class="div__close">
+          <h2>SEND ME A MESSAGE</h2>
+          <button type="reset" class="close__btn">
+            <i class="bx bx-x"></i>
+          </button>
+        </div>
+        <label for="name">
+          <i class="bx bxs-business label__icons"></i>
+          <input type="text" name="name" placeholder="Name" required />
+        </label>
+        <label for="email">
+          <i class="bx bxs-envelope label__icons"></i>
+          <input type="text" name="email" placeholder="Email" required />
+        </label>
+        <label for="message">
+          <i class="bx bxs-message-dots label__icons"></i>
+          <textarea name="message" placeholder="Message" required></textarea>
+        </label>
+        <div class="div__send_btn">
+          <button class="send__btn" type="submit"><i class="bx bxs-send"></i>Send</button>
+        </div>
+      </form>
+    </div>
+
+    <section class="home" id="home">
+      <div class="home__text">
+        <h1>Hi, I'm <br /><span>Erick Aronés</span></h1>
+        <h2>Programmer, Web Developer and Data Analyst</h2>
+        <a href="#" class="btn__cv"><i class="bx bx-file"></i>Show CV</a>
+      </div>
+      <div class="home__img">
+        <img src="assets/img_1.svg" alt="me" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <div class="description">
+        <img class="me__img" src="assets/img_me.png" alt="me" />
+        <div>
+          My name is Erick Aronés Garcilazo, and I am a scholarship student at the Universidad Peruana de Ciencias Aplicadas. Currently, I am in the top tenth percentile and am in
+          the eighth semester of Computer Science.
+          <br />
+          <br />
+          <span>Software Development</span>
+          <br />
+          <li>Developed projects in various programming languages, including C, C++, Java, and Python.</li>
+          <li>Created 2D video games, image recognition systems, multi-agent systems, and convolutional neural networks.</li>
+          <li>Proficient in tools such as Microsoft Visual Studio, NetBeans, and PyCharm.</li>
+          <br />
+          <span>Web Development</span>
+          <br />
+          <li>Proficient in Frontend with experience in frameworks like React and Angular.</li>
+          <li>Utilized design frameworks such as MaterialUI and Bootstrap.</li>
+          <li>Experience in using 3D graphics APIs like WebGL.</li>
+          <li>Proficient in Backend with experience in .NET Core and Spring Boot.</li>
+          <br />
+          <span>Data Science</span>
+          <br />
+          <li>Proficient in SQL and languages like Python and R for data analysis.</li>
+          <li>Knowledgeable in Machine Learning and usage of graphical libraries.</li>
+        </div>
+      </div>
+      <div class="container-box">
+        <div class="div__skill">
+          <h2>Programming Languages</h2>
+          <div class="div__logos" id="div__lang">
+            <i class="bx bxl-python"><span>Python</span></i>
+            <i class="bx bxl-java"><span>Java</span></i>
+            <i class="bx bxl-c-plus-plus"><span>C++</span></i>
+            <i class="bx bxs-data"><span>SQL</span></i>
+          </div>
+        </div>
+        <div class="div__skill">
+          <h2>Web development</h2>
+          <div class="div__logos">
+            <i class="bx bxl-html5"><span>HTML</span></i>
+            <i class="bx bxl-css3"><span>CSS</span></i>
+            <i class="bx bxl-javascript"><span>JavaScript</span></i>
+            <i class="bx bxl-bootstrap"><span>Bootstrap</span></i>
+            <i class="bx bxl-angular"><span>Angular</span></i>
+            <i class="bx bxl-react"><span>React</span></i>
+            <i class="bx bxl-flask"><span>Flask</span></i>
+            <i class="bx bxl-spring-boot"><span>Spring</span></i>
+          </div>
+        </div>
+        <div class="div__skill">
+          <h2>Tools</h2>
+          <div class="div__logos">
+            <i class="bx bxl-aws"><span>Amazon AWS</span></i>
+            <i class="bx bxl-git"><span>Git</span></i>
+            <i class="bx bxl-github"><span>GitHub</span></i>
+            <i class="bx bxl-docker"><span>Docker</span></i>
+          </div>
+        </div>
+        <div class="div__skill">
+          <h2>Methodologies</h2>
+          <div class="div__logos">
+            <i class="bx bx-network-chart"><span>SCRUM</span></i>
+            <i class="bx bx-objects-horizontal-center"><span>Traditional</span></i>
+          </div>
+        </div>
+      </div>
+      <div class="div__skill">
+        <h2>Certifications</h2>
+        <div class="div__certif">
+          Learn SQL Basics for Data Science
+          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/KMKDYKKFE6AE" class="btn__cv" target="_blank"><i class="bx bx-show"></i>Show</a>
+        </div>
+        <div class="div__certif">
+          Técnico en Ciberseguridad
+          <a href="https://drive.google.com/file/d/1zep1fnYdbyhLyGKcOQqOJwGZAFuvB5bX/view" class="btn__cv" target="_blank"><i class="bx bx-show"></i>Show</a>
+        </div>
+        <div class="div__certif">
+          IBM Cybersecurity Analyst
+          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/4THLFAYUTS5W" class="btn__cv" target="_blank"><i class="bx bx-show"></i>Show</a>
+        </div>
+        <div class="div__certif">
+          Security Analyst Fundamentals
+          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/C3Q4WCRUC3NL" class="btn__cv" target="_blank"><i class="bx bx-show"></i>Show</a>
+        </div>
+        <div class="div__certif">
+          IT Fundamentals for Cybersecurity
+          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/2VNHEAR22CZ7" class="btn__cv" target="_blank"><i class="bx bx-show"></i>Show</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>Some projects I have developed</h2>
+      <div class="div__projects">
+        <div class="div__project">
+          <div class="div__rect">
+            <a href="https://sudokuxpert-10-production.up.railway.app/" target="_blank">
+              <img class="img__project" src="assets/img_project1.jpeg" alt="project" />
+              <div class="div__project_des">
+                <span>SudokuXpert: </span>
+                This application is capable of solving any Sudoku puzzle in the blink of an eye. It is developed using Flask and makes use of constraint programming libraries.
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="div__project">
+          <div class="div__rect">
+            <a href="https://ekarones.github.io/simulationOfLightingInSpace-2.0/" target="_blank">
+              <img class="img__project" src="assets/img_project2.jpeg" alt="project" />
+              <div class="div__project_des">
+                <span>Simulation Of Lighting In Space: </span>
+                Explore the sky and try out different types of lighting such as diffuse and specular. This application uses WebGL and 3D computer graphics expertise. It is
+                preferable to use Google or Edge.
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="div__project">
+          <div class="div__rect">
+            <a href="https://ekarones.github.io/terrainGenerationSimulation-1.0/" target="_blank">
+              <img class="img__project" src="assets/img_project3.jpeg" alt="project" />
+              <div class="div__project_des">
+                <span>Terrain Generation Simulation: </span>
+                Fly over a randomly generated procedural terrain (similar to a famous video game) and observe object interactions. This application leverages Object-Oriented
+                Programming (OOP) and computer graphics expertise. Developed using WebGL, JS, CSS, and HTML.
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="div__project">
+          <div class="div__rect">
+            <a href="https://ekarones.github.io/simulationOfAFlashlight-1.0/" target="_blank">
+              <img class="img__project" src="assets/img_project4.jpeg" alt="project" />
+              <div class="div__project_des">
+                <span>Simulation Of A Flashlight: </span>
+                Explore around this world and observe the details of the lighting. This style is commonly used in many video games. The project is developed with JS, CSS, and HTML,
+                and uses WebGL for rendering graphics. It is recommended to use Google or Edge.
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="div__project">
+          <div class="div__rect">
+            <a href="https://github.com/ekarones/reconstructionOfFurnitureUsingConvolutionalNeruronalNetworks-2.0/blob/main/TrabajoFinal.ipynb" target="_blank">
+              <img class="img__project" src="assets/img_project5.png" alt="project" />
+              <div class="div__project_des">
+                <span>Reconstruction Of Furniture Using CNN: </span>
+                A Python application capable of reconstructing furniture. It uses convolutional neural networks trained with over 1000 3D objects. Developed specifically for the
+                reconstruction of antique or damaged furniture.
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="div__project">
+          <div class="div__rect">
+            <a href="https://github.com/ekarones/COVIDPatientPrioritizationSystem/blob/main/COVID%20Patient%20Prioritization%20System.ipynb" target="_blank">
+              <img class="img__project" src="assets/img_project6.jpg" alt="project" />
+              <div class="div__project_des">
+                <span>COVID Patient Prioritization System</span>
+                During the pandemic, many hospitals in Lima faced collapse, and critically ill patients were unable to secure ICU beds. This Python program utilizes patient
+                geolocation data, their condition, and information on the location and bed capacity of the major hospitals in Lima to efficiently distribute patients in need.
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="div__certif">
+        To see more about all my projects and their source code, you can visit my GitHub repository.
+        <a href="https://github.com/ekarones?tab=repositories" class="btn__cv" target="_blank"><i class="bx bx-show"></i>Show</a>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <h2>Contacts</h2>
+      <div class="div__contacts">
+        <div class="contact__links">
+          <a href="https://github.com/ekarones" target="_blank"><i class="bx bxl-github"></i>GitHub</a>
+          <a href="https://linkedin.com/in/erick-aronés-garcilazo-631591282" target="_blank"><i class="bx bxl-linkedin-square"></i>LinkedIn</a>
+          <a href="https://wa.me/912968105" target="_blank"><i class="bx bxl-whatsapp"></i>WhatsApp</a>
+          <a href="tel:+51912968105" target="_blank"><i class="bx bxs-phone-call"></i>912968105</a>
+          <a href="mailto:erick19arones@gmail.com" target="_blank"><i class="bx bxs-envelope"></i>Gmail</a>
+        </div>
+        <div class="div__img2">
+          <img src="assets/img_2.svg" alt="phone" />
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <i class="bx bxs-copyright"></i>
+      Erick Aronés Garcilazo 2023
+    </div>
+    <a href="#" class="scroll">
+      <i class='bx bx-up-arrow-alt'></i>
+    </a>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
